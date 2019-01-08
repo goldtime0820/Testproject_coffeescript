@@ -1,0 +1,21 @@
+head
+  title jqtest
+
+body
+  h1 jqTest
+  +hello
+template(name='hello')
+  | URL  to  scrape   
+  input#tb_url(type='text', value='#{hockeyUrl}')
+  br
+  | Pattern to match  
+  input#tb_format(type='text', value='#{hockeyFormat}')
+  br
+  input#tb_ch(type='text', placeholder='cheerio.js')
+  button#bt_ch run cheerio.js
+  br
+  input#tb_jq(type='text', placeholder='jquery/jsdom')
+  button#bt_jq run jquery/jsdom
+  br
+  input#tb_xray(type='text', placeholder='x-ray.js')
+  button#bt_xray run x-ray.js
